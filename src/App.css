@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat&display=swap');
+
+:root {
+  --light: #e0d8de;
+  --pink: #e2856e;
+  --red: #d7263d;
+  --dark: #1b2432;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.background {
+  background-color: var(--light);
+}
+
+section {
+  padding: 2rem;
+}
+
+a {
+  color: var(--pink);
+}
+
+/* HEADER */
+
+a:hover,
+a:focus,
+a:active {
+  color: var(--pink);
+}
+
+a:visited {
+  color: var(--light);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+header a {
+  text-decoration: none;
+  padding-right: 1rem;
+}
+
+.logo {
+  font-family: 'Cookie', cursive;
+  font-size: 1.2rem;
+}
+
+/* HOMEPAGE */
+
+#home {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+h1 {
+  flex: 1 1 60%;
+  text-align: center;
+}
+
+.photo-profile {
+  border-radius: 50%;
+  line-height: 0;
+}
+
+.photo-profile img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+h2 {
+  padding: 1rem;
+}
+
+/* PROJECTS */
+
+.icon {
+  width: 1rem;
+}
+
+h3 {
+  padding: 1rem 0;
+}
+
+p {
+  padding-bottom: 1rem;
+  font-size: 0.6rem;
+}
+
+.project-container {
+  display: flex;
+}
+
+.slide {
+  display: none;
+  max-width: 40rem;
+}
+
+.active {
+  display: block;
+}
+
+.slide img {
+  width: 100%;
+}
+
+/* FOOTER */
+
+.social-links {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+}
+
+.social-links img {
+  width: 3rem;
+}
+
+.author {
+  background-color: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  #home {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .photo-profile {
+    width: 50vmin;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  #home {
+    justify-content: space-evenly;
+    height: 100vh;
+  }
+  .photo-profile {
+    width: 40vmin;
+  }
+}
+
