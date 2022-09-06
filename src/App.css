@@ -38,12 +38,11 @@ a:active {
   color: var(--pink);
 }
 
-a:visited {
-  color: var(--light);
-}
 
 header {
   display: flex;
+  position: fixed;
+  width: 100vw;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
@@ -54,6 +53,7 @@ header {
 header a {
   text-decoration: none;
   padding-right: 1rem;
+  color: var(--light);
 }
 
 .logo {
@@ -127,7 +127,7 @@ p {
 .social-links {
   display: flex;
   justify-content: space-evenly;
-  padding: 0.5rem;
+  padding: 2rem;
 }
 
 .social-links img {
@@ -145,12 +145,14 @@ p {
   #home {
     flex-direction: column-reverse;
     gap: 2rem;
+    padding-top: 4rem;
   }
   .photo-profile {
     width: 50vmin;
   }
 
-  h2 {
+  h2, 
+  .intro p {
     text-align: center;
   }
 }
